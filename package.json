@@ -1,0 +1,28 @@
+{
+  "name": "jasmine-karma-nodejs-boilerplate",
+  "version": "0.0.1",
+  "description": "A boiler plate project using karma-browserify for running jasmine tests with karma, and node",
+  "main": "src/HelloWorld.js",
+  "scripts": {
+    "test": "karma start",
+    "test:watch": "karma start --no-single-run --auto-watch"
+  },
+  "keywords": [
+    "karma-browserify"
+  ],
+  "author": "Q.S. Wang <wangqs_eclipse@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.0",
+    "karma": "^0.13.0",
+    "karma-browserify": "^5.0.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "watchify": "^3.6.1"
+  },
+  "browserify-shim": {
+    
+  }
+}
