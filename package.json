@@ -1,7 +1,7 @@
 {
   "name": "jasmine-karma-nodejs-boilerplate",
   "version": "0.0.1",
-  "description": "A boiler plate project using karma-browserify for running jasmine tests with karma, and node. Support ES6, and CommonJS.",
+  "description": "A boilerplate project using karma-browserify for running jasmine tests with karma, and node. Support ES6, and CommonJS.",
   "main": "src/HelloWorld.js",
   "scripts": {
     "test": "karma start",
