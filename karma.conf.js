@@ -3,16 +3,25 @@
 module.exports = function(karma) {
   karma.set({
 
-    frameworks: [ 'jasmine', 'browserify' ],
+    basePath: '',
+    frameworks: ['browserify', 'jasmine'],
 
     files: [
-      'test/**/*Spec.js'
+       'src/**/*.js',
+       'test/**/*Spec.js'
     ],
 
-    reporters: [ 'dots' ],
+    exclude: [
+    ],
 
     preprocessors: {
-      'test/**/*Spec.js': [ 'browserify' ]
+       'src/**/*.js': ['browserify'],
+       'test/**/*Spec.js': ['browserify']
+    },
+
+    browserify: {
+       debug: true,
+      "transform": [["babelify", { "presets": ["env"] }]]
     },
 
     browsers: [ 'PhantomJS' ],
@@ -20,12 +29,6 @@ module.exports = function(karma) {
     logLevel: 'LOG_DEBUG',
 
     singleRun: true,
-    autoWatch: false,
-
-    // browserify configuration
-    browserify: {
-      debug: true,
-      transform: [ 'brfs', 'browserify-shim' ]
-    }
+    autoWatch: false
   });
 };
