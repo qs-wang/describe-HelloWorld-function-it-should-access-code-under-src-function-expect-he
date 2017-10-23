@@ -24,6 +24,5 @@
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "watchify": "^3.9.0"
-  },
-  "browserify-shim": {}
+  }
 }
