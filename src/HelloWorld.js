@@ -1,3 +1,3 @@
-module.exports.hello = function(){
+export const hello = async function(){
   return 'Hello world';
 }

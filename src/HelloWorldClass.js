@@ -1,8 +1,4 @@
-class HelloWorldClass {
+export default class HelloWorldClass {
   constructor() {
-
   }
 }
-
-
-export default HelloWorldClass;

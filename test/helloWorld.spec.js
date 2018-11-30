@@ -1,12 +1,9 @@
-'use strict';
-
-var hello = require('../src/HelloWorld').hello;
-console.log(hello());
+import {hello} from '../src/HelloWorld'
 
 describe('HelloWorld', function() {
 
-  it('should access code under src', function() {
-    expect(hello()).toEqual('Hello world');
+  it('should access code under src', async function() {
+    expect(await hello()).toEqual('Hello world');
   });
 
 });
