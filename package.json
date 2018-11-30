@@ -1,5 +1,5 @@
 {
-  "name": "jest-nodejs-es6-boilerplate",
+  "name": "winston_logger_factory",
   "version": "1.0.0",
   "description": "A complete boilerplate for development including unit test and code coverage.",
   "main": "src/index.js",
@@ -12,10 +12,16 @@
     "type": "git",
     "url": "https://github.com/qs-wang/jest-nodejs-es6-boilerplate.git"
   },
-  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^23.1.0"
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "dependencies": {
+    "winston": "^3.1.0"
   }
 }
